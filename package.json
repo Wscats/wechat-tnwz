@@ -6,14 +6,29 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint src --ext .ts,.tsx,.js,.jsx --fix",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "lint:check": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
-  "author": "",
+  "author": "wscats (https://github.com/wscats)",
   "license": "ISC",
   "devDependencies": {
     "mysql": "^2.15.0"
   },
   "engines": {
     "node": ">=18.0.0"
-  }
+  },
+  "keywords": [
+    "wechat",
+    "tnwz"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wscats/wechat-tnwz.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wscats/wechat-tnwz/issues"
+  },
+  "homepage": "https://github.com/wscats/wechat-tnwz#readme"
 }

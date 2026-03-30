@@ -1,3 +1,5 @@
+'use strict';
+
 const mysql = require("mysql");
 const fs = require("fs");
 const http = require("http");
@@ -88,7 +90,7 @@ module.exports = {
                 }
             });
             // 判断最后一题
-            if (container.data.num == 5) {
+            if (container.data.num === 5) {
                 console.log("这是最后一题")
             } else {
                 
